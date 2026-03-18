@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    height: 100%;
+}
+
+.generateButton {
+    background: transparent;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: inherit;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+}
+
+.generateButton:hover {
+    filter: brightness(0.95);
+}
+
+.icon {
+    width: 30px; /* slightly larger */
+    height: 30px;
+    display: inline-block;
+    object-fit: contain;
+    transform: translateX(-2px); /* nudge a little to the left */
+}
+
+.label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+}

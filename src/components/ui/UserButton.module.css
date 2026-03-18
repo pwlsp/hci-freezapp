@@ -1,0 +1,84 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    height: 100%;
+}
+
+.userButton {
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: inherit;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.userButton:hover {
+    background: #f3f4f6;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: -16px;
+    transform: translateY(-100%);
+    margin-top: 8px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 160px;
+    z-index: 40;
+}
+
+.menu:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    right: 32px;
+    bottom: -24px;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.menuItem input {
+    width: 16px;
+    height: 16px;
+}
+
+.userName {
+    font-size: 0.95rem;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+}

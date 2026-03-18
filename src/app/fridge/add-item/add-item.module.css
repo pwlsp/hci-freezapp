@@ -1,0 +1,179 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding-bottom: 60px; /* Space for the floating add button */
+}
+
+.header {
+    padding: 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 44px; /* Ensure consistent height */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.backLink {
+    display: flex;
+    align-items: center;
+    color: #003366;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 99;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #003366;
+    margin: 0;
+}
+
+.label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #003366; /* var(--primary-color) */
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Owners Section */
+.ownersHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.actions {
+    font-size: 0.85rem;
+    color: #00aeef; /* var(--secondary-color) */
+    cursor: pointer;
+}
+
+.ownerList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ownerItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #003366;
+}
+
+/* Bottom Toggle Bar */
+.bottomBar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    flex-shrink: 0;
+}
+
+/* Wrapper to position add-item button above the bottom bar, aligned with panel */
+.addBarWrapper {
+    position: absolute;
+    bottom: 90px; /* place above the bottom bar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    z-index: 51;
+    pointer-events: none;
+}
+
+.addItemBtn {
+    pointer-events: auto;
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: not-allowed;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.addItemBtn.enabled {
+    background: #00aeef; /* match secondary/greenish accent or use primary */
+    color: white;
+    cursor: pointer;
+}
+
+.toggleContainer {
+    display: flex;
+    background: #f5f5f5;
+    border-radius: 50px;
+    padding: 4px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.toggleBtn {
+    flex: 1;
+    padding: 10px 0;
+    border-radius: 40px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    color: #757575; /* var(--text-muted) */
+    transition: all 0.2s;
+}
+
+.active {
+    background: #003366; /* var(--primary-color) */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

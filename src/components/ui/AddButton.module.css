@@ -1,0 +1,25 @@
+.addButton {
+    background: #0ea5a4;
+    color: white;
+    border: none;
+    font-size: 4em;
+    line-height: 1;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.addButton:hover {
+    opacity: 0.95;
+}
+
+.label {
+    margin-block: 5px 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+}

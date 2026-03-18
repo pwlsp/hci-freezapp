@@ -1,0 +1,28 @@
+.bottomBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: #ffffffcc;
+    border-top: 1px solid #e5e7eb;
+    position: relative;
+}
+
+.left,
+.center,
+.right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.center {
+    justify-content: center;
+    flex: 1;
+
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+}

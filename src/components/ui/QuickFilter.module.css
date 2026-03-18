@@ -1,0 +1,40 @@
+.wrapper {
+    display: inline-block;
+    margin-inline: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition:
+        background 120ms ease,
+        border-color 120ms ease;
+    user-select: none;
+    text-wrap: nowrap;
+    height: 100%;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.selected {
+    background: #e0f2fe;
+    border-color: #60a5fa;
+}

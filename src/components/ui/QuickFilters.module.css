@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow-x: scroll;
+    padding: 0.5rem 0;
+    border: 1px solid var(--border-light);
+}
+
+.list::-webkit-scrollbar {
+    height: 0px;
+}
